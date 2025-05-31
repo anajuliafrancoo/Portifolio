@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portifólio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Ana</a>
+
+        <nav>
+            <a href="#" class="active">Menu</a>
+            <a href="#">Projetos</a>
+            <a href="#">Habilidades</a>
+            <a href="#">Formação</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <section class="menu">
+        <div class="menu-img">
+            <img src="main.jpg" alt="">
+        </div>
+        <div class="menu-content">
+            <h1>Olá, Aqui é a <span>Ana Júlia</span></h1>
+            <h3 class="typing-text">Sou Programadora</h3>
+            <p>Estudante de Bacharelado em Sistemas de Informação, com formação Técnica em Desenvolvimento de Sistemas e conhecimento em diversas tecnologias web e back-end.</p>
+            <div class="social-icons">
+                <a href="#" id="linkedin-link" target="_blank" rel="noopener noreferrer"><i  class="fa-brands fa-linkedin"></i></a>
+                <a href="#" id="github-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                <a href="#" id="instagram-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        
+                        const linkedinURL = 'https://www.linkedin.com/in/ana-júlia-de-souza-franco';
+                        const githubURL = 'https://github.com/anajuliafrancoo';
+                        const instagramURL = 'https://www.instagram.com/anajuliadsfrancoo';
+
+                        const linkedinLink = document.getElementById('linkedin-link');
+                        const githubLink = document.getElementById('github-link');
+                        const instagramLink = document.getElementById('instagram-link');
+                        
+                        function redirecionar(url) {
+                            window.open(url, '_blank'); 
+                            }
+                            
+                            if (linkedinLink) {
+                                linkedinLink.addEventListener('click', function(event) {
+                                    event.preventDefault(); 
+                                    redirecionar (linkedinURL);
+                                });
+                            }
+                            if (githubLink) {
+                                githubLink.addEventListener('click', function(event) {
+                                    event.preventDefault(); 
+                                    redirecionar(githubURL);
+                                });
+                            }
+                            
+                            if (instagramLink) {
+                                instagramLink.addEventListener('click', function(event) {
+                                    event.preventDefault();
+                                    redirecionar(instagramURL); 
+                                });
+                            }
+                        });
+                        </script>
+                        </div>
+                        <a href="#" class="btn">ENTRE EM CONTATO</a>
+                    </div>
+                </section>
+            </body>
+            </html>
